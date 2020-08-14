@@ -10,7 +10,7 @@ import Foundation
 
 class MessageThreadController {
     
-    static let baseURL = URL(string: "https://message-board-34041.firebaseio.com/")!
+    static let baseURL = URL(string: "https://message-board-34041.firebaseio.com")!
     var messageThreads: [MessageThread] = []
     
     func fetchMessageThreads(completion: @escaping () -> Void) {
@@ -49,7 +49,7 @@ class MessageThreadController {
         
         let thread = MessageThread(title: title)
         
-        let requestURL = MessageThreadController.baseURL.appendingPathComponent(thread.identifier).appendingPathExtension("json")
+        let requestURL = MessageThreadController.baseURL.appendingPathComponent(thread.identifier).appendingPathComponent("json")
         var request = URLRequest(url: requestURL)
         request.httpMethod = HTTPMethod.put.rawValue
         
@@ -68,7 +68,7 @@ class MessageThreadController {
             
             self.messageThreads.append(thread)
             completion()
-        }
+        }.resume()
     }
     
     func createMessage(in messageThread: MessageThread, withText text: String, sender: String, completion: @escaping () -> Void) {
