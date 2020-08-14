@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04A36D9324E67FE200F1EAFC /* Bugs.md in Resources */ = {isa = PBXBuildFile; fileRef = 04A36D9224E67FE200F1EAFC /* Bugs.md */; };
+		04A36D9524E6882E00F1EAFC /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A36D9424E6882E00F1EAFC /* GoogleService-Info (1).plist */; };
 		4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612B5C7211AB41100E7FF73 /* AppDelegate.swift */; };
 		4612B5CD211AB41200E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CB211AB41200E7FF73 /* Main.storyboard */; };
 		4612B5CF211AB41300E7FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CE211AB41300E7FF73 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		04A36D9224E67FE200F1EAFC /* Bugs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Bugs.md; sourceTree = "<group>"; };
+		04A36D9424E6882E00F1EAFC /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		4612B5C4211AB41100E7FF73 /* Message Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612B5C7211AB41100E7FF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4612B5CC211AB41200E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		CE840C992492D4EA00817BC8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				04A36D9424E6882E00F1EAFC /* GoogleService-Info (1).plist */,
 				4612B5C7211AB41100E7FF73 /* AppDelegate.swift */,
 				CE840C972492D40500817BC8 /* SceneDelegate.swift */,
 			);
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4612B5D2211AB41300E7FF73 /* LaunchScreen.storyboard in Resources */,
+				04A36D9524E6882E00F1EAFC /* GoogleService-Info (1).plist in Resources */,
 				4612B5CF211AB41300E7FF73 /* Assets.xcassets in Resources */,
 				04A36D9324E67FE200F1EAFC /* Bugs.md in Resources */,
 				4629C7DC214B924900E7FF73 /* MockMessages.json in Resources */,
